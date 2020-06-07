@@ -1,4 +1,4 @@
-# Kitsu Media
+# Ignat Japan
 
 ## Get started
 
