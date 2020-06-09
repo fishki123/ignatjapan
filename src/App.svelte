@@ -7,7 +7,8 @@
     import Register from  "./Register.svelte";
     import Login from  "./Login.svelte";
     import Mainprofile from  "./mainprofile.svelte";
-    export let url = "https://ignatjapan.herokuapp.com/";
+
+    export let url = "";
 </script>
 <Tailwindcss />
 <main>
