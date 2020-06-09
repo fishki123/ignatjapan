@@ -14,7 +14,8 @@
                 <div class="">
                     <div class="mt-2"><h3 class="font-bold text-3xl text-gray-800 font-bold leading-none mb-3 text-center">Название</h3></div>
                     <div class=""><p class="text-gray-600 mb-2 text-center">Жанр/Категория Жанр/Категория Жанр/Категория</p></div>
-                    <div class=""><p class="leading-normal text-left slide-in-bottom-subtitle">Что-тоЧто-то</p></div>
+                    <div class=""><p class="leading-normal text-left slide-in-bottom-subtitle">Что-тоЧто-тоsdfdsfsdf</p>
+                    </div>
                 </div>
             </div>
         </div>
