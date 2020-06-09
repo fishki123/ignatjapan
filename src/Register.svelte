@@ -135,7 +135,7 @@
             </div>
         </form>
         <p class="text-center text-gray-500 text-xs">
-            &copy;2020 Acme Corp. Все права защищены.
+            &copy;2020 Ignat Corp. Все права защищены.
         </p>
 </div>
 <div class="h-56 md:h-56 w-full "></div>

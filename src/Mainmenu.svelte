@@ -87,7 +87,6 @@
     </div>
 </div>
 <div class="bg-gray-300 h-16 w-full"></div>
-
     <div class="flex-1 bg-gray-300 p-4 pb-24 md:pb-5">
         <div class="bg-gray-100 border-2 border-black p-4 h-full md:h-full rounded-lg shadow-lg">
             <div class="md:w-full w-auto ">
