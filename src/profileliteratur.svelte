@@ -73,33 +73,33 @@
     </style>
 
     <div class="grid md:grid-cols-12 grid-cols-2 w-full">
-        <div class="grid col-start-1 md:col-end-10 col-end-9 grid-cols-12">
+        <div class="grid col-start-1 md:col-end-9 col-end-9 grid-cols-12 items-baseline md:items-center">
             <div>
-<span class="cursor-default truncate text-indigo-700 hover:text-orange-900 hover:underline">
-120
-</span>
+                <span class="cursor-default truncate text-indigo-700 hover:text-orange-900 hover:underline">
+                1
+                </span>
             </div>
-            <div class="md:col-start-2 col-start-3 col-end-12 text-indigo-700">
-<span class="cursor-pointer hover:text-orange-900 hover:underline">
-Непризнанный школой владыка демонов! Сильнейший владыка демонов в истории поступает в академию, переродившись своим потомком
-</span>
+            <div class="md:col-start-2 col-start-3 col-end-12 text-indigo-700 ">
+                <span class="cursor-pointer hover:text-orange-900 hover:underline">
+                Непризнанный школой владыка демонов! Сильнейший владыка демонов в истории
+                </span>
             </div>
         </div>
-        <div class="inputers col-start-10 col-end-13 md:grid grid-cols-2 hidden">
+        <div class="inputers col-start-10 col-end-13 md:grid grid-cols-2 items-baseline md:items-center hidden">
             <div class="rating ml-1 text-indigo-700">
                 <input class="text-indigo-700 hover:text-orange-900 border-2 border-white rounded h-6 w-12
 mb-3 focus:outline-none text-center
-focus:border-orange-900 hover:border-orange-900" id="comment" min="0" max="10"
+focus:border-orange-900 hover:border-orange-900 mt-3" id="comment" min="0" max="10"
                        aria-valuemax="10" placeholder="─" type="number"/>
             </div>
-            <div class="">
-                <div class="number-input ml-2 text-indigo-700 hover:text-orange-900">
-                    <input class="quantity focus:outline-none rounded" min="0" name="quantity" value="0" type="number">
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-                </div>
+            <div class="text-indigo-700">
+                    <span class="cursor-pointer hover:text-orange-900 hover:underline">
+                        Художественная
+                        Документальная
+                        Учебная
+                    </span>
             </div>
         </div>
-
     </div>
 </div>
 

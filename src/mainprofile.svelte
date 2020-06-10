@@ -2,8 +2,8 @@
     import { Router, Link, Route } from "svelte-routing";
     import Ranobe from "./profileliteratur.svelte";
 </script>
-<body class="mt-20 font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover" style="background-image:url('https://i.ibb.co/NnJ4qn2/DFqzjt4-S66-CPV6-IHiy-Fz-CDNIRQKPFu-UDSvzn-Wp-Jdp-Q.png');">
-<nav class="bg-gray-900 pt-2 md:pt-1 pb-1 px-1 mt-0 h-auto fixed w-full top-0 z-50">
+<body class="mt-20 font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover">
+<nav class="bg-gray-900 pt-2 md:pt-1 pb-1 px-1 mt-0 h-auto fixed w-full z-40 top-0 ">
     <div class="flex flex-wrap items-center">
         <div class="flex flex-shrink md:w-1/3 justify-center md:justify-start text-white">
             <Link to="/">
@@ -47,14 +47,24 @@
                 <li class="flex-1 md:flex-none md:mr-3 text-right">
                     <div class="relative inline-block">
                         <button onclick="toggleDD('myDropdown')" class="drop-button text-white focus:outline-none"> <span class="pr-2"><i class="fa fa-user"></i></span> Привет, пользователь <svg class="h-3 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg></button>
-                        <div id="myDropdown" class="dropdownlist absolute bg-gray-900 text-white right-0 mt-3 p-3 overflow-auto invisible">
+                        <div id="myDropdown"
+                             class="dropdownlist absolute bg-gray-900 text-white right-0 mt-3 p-3 overflow-auto z-50 invisible">
                             <input type="text" class="drop-search p-2 text-gray-600" placeholder="Search.." id="myInput" onkeyup="filterDD('myDropdown','myInput')">
                             <Link to="Mainprofile">
-                                <a href="/" class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block text-center"><i class="fa fa-user fa-fw"></i>Profile</a>
+                                <a href="/"
+                                   class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block text-center"><i
+                                        class="fa fa-user fa-fw mr-2 text-blue-600"></i>Профиль</a>
                             </Link>
-                            <a href="#" class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block text-center"><i class="fa fa-cog fa-fw"></i> Settings</a>
+                            <a href="#"
+                               class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block text-center"><i
+                                    class="fa fa-address-card fa-fw mr-2"></i>Панель админа</a>
+                            <a href="#"
+                               class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block text-center"><i
+                                    class="fa fa-bell fa-lg mr-2"></i>Уведомления</a>
                             <div class="border border-gray-800"></div>
-                            <a href="#" class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block text-center"><i class="fas fa-sign-out-alt fa-fw"></i> Log Out</a>
+                            <a href="#"
+                               class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block text-center"><i
+                                    class="fas fa-sign-out-alt fa-fw mr-2"></i>Разлогиниться</a>
                         </div>
                     </div>
                 </li>
@@ -62,214 +72,243 @@
         </div>
     </div>
 </nav>
-<div class="pl-10 pr-10 bg-red-900 flex flex-wrap items-center fixed w-full bottom-0 md:bottom-auto z-50 md:z-40">
-    <div class="flex w-full content-center justify-between md:justify-end0">
+<div class="pl-10 pr-10 bg-red-900 flex flex-wrap items-center fixed w-full bottom-0 md:bottom-auto">
+    <div class="flex w-full content-center justify-between md:justify-end">
         <ul class="list-reset flex justify-between flex-1">
-            <li class="flex-1 md:flex-none md:mr-3 ">
+            <li class="flex-1 md:flex-none md:mr-3">
                 <Link to="/">
                     <a href="/" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-white hover:border-pink-500">
-                        <i class="fas fa-home pr-0 ml-4 md:ml-0 md:pr-3"></i><span class="pb-1 md:pb-0 text-xs md:text-base  md:text-white block md:inline-block">Главное меню</span>
+                        <i class="fas fa-home pr-0 ml-8 md:ml-0 md:pr-3"></i><span
+                            class="pb-1 md:pb-0 text-xs md:text-base  md:text-white block md:inline-block">Главное меню</span>
                     </a>
                 </Link>
             </li>
-            <li class="flex-1 md:flex-none md:mr-3">
+            <li class="">
                 <Link to="Japanliterature">
                     <a href="/" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-white hover:border-purple-500">
-                        <i class="fa fa-book pr-0 md:pr-3 ml-6 md:ml-0"></i><span class="pb-1 md:pb-0 text-xs md:text-base  md:text-white block md:inline-block">Японская литература</span>
+                        <i class="fa fa-book pr-0 md:pr-3 ml-12 md:ml-0"></i><span
+                            class="pb-1 md:pb-0 text-xs md:text-base  md:text-white block md:inline-block">Японская литература</span>
                     </a>
                 </Link>
-            </li>
-            <li class="flex-1 md:flex-none md:mr-3">
-                <a href="#" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-white hover:border-purple-500">
-                    <i class="fas fa-chart-area pr-0 ml-4 md:pr-3"></i><span class="pb-1 md:pb-0 text-xs md:text-base text-white md:text-white block md:inline-block">Analytics</span>
-                </a>
             </li>
         </ul>
     </div>
 </div>
-<div class="w-full max-w-xs mx-auto content-end mt-4">
-    <div class="">
-        <div class="flex justify-center">
-            <img src="https://i.ibb.co/ZNqNwsL/302564114176201.png" class="w-32 h-32 rounded-full border-solid border-white border-2 mt-32 ">
-        </div>
-        <h1 class="ml-24 font-bold text-3xl text-black">Shruken</h1>
+<section class="block" style="height: 500px;">
+    <div
+            class="top-0 w-full h-full bg-center bg-cover"
+            style='background-image: url("https://i.ibb.co/NnJ4qn2/DFqzjt4-S66-CPV6-IHiy-Fz-CDNIRQKPFu-UDSvzn-Wp-Jdp-Q.png");'>
+        <span id="blackOverlay" class="w-full h-full opacity-50 bg-black"></span>
     </div>
-</div>
-<div class="bg-white">
-        <div class="p-6 mb-16 sm:mb-0 bg-white md:bg-transparent">
-            <div class="container mx-auto w-full flex flex-wrap justify-between mx-2 bg-white p-2 md:px-20 block">
-                <h1 class="text-black w-full border border-transparent mb-2 pl-2 font-bold bg-gray-300 border-2 border-gray-500 ">Список японских литератур</h1>
-                <input type="text" class="w-full bg-white text-sm text-black transition border border-transparent focus:outline-none
+</section>
+<section class="py-16 bg-gray-300">
+    <div class="container mx-auto">
+        <div class=" flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
+            <div class="px-6">
+                <div class="flex flex-wrap justify-center">
+                    <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
+                        <div class="relative">
+                            <img alt="..."
+                                 src="https://i.ibb.co/NnJ4qn2/DFqzjt4-S66-CPV6-IHiy-Fz-CDNIRQKPFu-UDSvzn-Wp-Jdp-Q.png"
+                                 class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16"
+                                 style="max-width: 150px;"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-20">
+                    <h3 class="font-bold text-3xl text-black font-semibold leading-normal mb-2 text-gray-800 mb-2">
+                        Имя пользователя
+                    </h3>
+                </div>
+                <div class="mt-10 py-10 border-t border-gray-300 text-center">
+                    <div class="flex flex-wrap justify-center">
+                        <div class="w-full lg:w-9/12 px-4">
+                            <p class="mb-4 text-lg leading-relaxed text-gray-800">
+                                ЧеточетоЧеточетоЧеточетоЧеточетоЧеточетоЧеточето
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white">
+                    <div class="mx-auto p-6 mb-16 bg-white md:bg-transparent">
+                        <div class="container mx-auto w-full flex flex-wrap justify-between mx-2 bg-white p-2 block">
+                            <h1 class="text-black w-full border border-transparent mb-2 pl-2 font-bold bg-gray-300 border-2 border-gray-500 ">
+                                Список японских литератур</h1>
+                            <input type="text" class="w-full bg-white text-sm text-black transition border border-transparent focus:outline-none
                     focus:border-gray-700 rounded py-1 px-2 pl-2 appearance-none leading-normal border-2 border-gray-300" placeholder="Поиск по названию" id="myInput_1" onkeyup="filterDD1('myDropdown_1','myDropdown_2','myDropdown_3','myInput_1')">
-                <div class="h-8 w-full "></div>
-                <ul class="w-full ">
-                    <li class="toggleable_1 text-blue-500 ">
-                        <div class="w-full border border-transparent border-gray-500 bg-gray-300">
-                            <h3 class="ml-4 text-black font-bold text-2x1">Запланировано</h3>
-                        </div>
-                            <div class="w-full">
-                                <div class="container mx-auto w-full flex flex-wrap justify-between mx-2 mt-10">
-                                    <div class="border-b border-b-2 grid md:grid-cols-12 grid-cols-2 w-full font-bold">
-                                        <div class="grid col-start-1 md:col-end-10 col-end-9 grid-cols-12">
-                                            <div class="ml-4">
+                            <div class="h-8 w-full "></div>
+                            <ul class="w-full ">
+                                <li class="toggleable_1 text-blue-500 ">
+                                    <div class="w-full border border-transparent border-gray-500 bg-gray-300">
+                                        <h3 class="ml-4 text-black font-bold text-2x1">Запланировано</h3>
+                                    </div>
+                                    <div class="w-full">
+                                        <div class="mx-auto w-full flex flex-wrap justify-between mx-2 mt-10">
+                                            <div class="border-b border-b-2 grid md:grid-cols-12 grid-cols-2 w-full font-bold">
+                                                <div class="grid col-start-1 md:col-end-10 col-end-9 grid-cols-12">
+                                                    <div class="ml-1">
                                                     <span class="сursor-default font-bold text-black">
                                                     #
                                                     </span>
-                                            </div>
-                                            <div class="md:col-start-2 col-start-3 col-end-12 text-indigo-700">
+                                                    </div>
+                                                    <div class="md:col-start-2 col-start-3 col-end-12 text-indigo-700">
                                                     <span class="cursor-default font-bold text-black">
                                                         Название
                                                     </span>
-                                            </div>
-                                        </div>
-                                        <div class="col-start-10 col-end-13 md:grid grid-cols-2 hidden">
-                                            <div class="cursor-default font-bold text-black">
+                                                    </div>
+                                                </div>
+                                                <div class="col-start-10 col-end-13 md:grid grid-cols-2 hidden">
+                                                    <div class="cursor-default font-bold text-black">
                                                     <span>
                                                     Оценка
                                                     </span>
-                                            </div>
-                                            <div class="cursor-default font-bold text-black">
+                                                    </div>
+                                                    <div class="cursor-default font-bold text-black lg:ml-8 ml-4">
                                                     <span>
-                                                    Страницы
+                                                    Тип
                                                     </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="myDropdown_1">
+                                                <a>
+                                                    <Ranobe/>
+                                                </a>
+                                                <a>
+                                                    <Ranobe/>
+                                                </a>
+                                                <a>
+                                                    <Ranobe/>
+                                                </a>
+                                                <a>
+                                                    <Ranobe/>
+                                                </a>
+                                                <a>
+                                                    <Ranobe/>
+                                                </a>
+                                                <a>
+                                                    <Ranobe/>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div id="myDropdown_1">
-                                        <a>
-                                            <Ranobe />
-                                        </a>
-                                        <a>
-                                            <Ranobe />
-                                        </a>
-                                        <a>
-                                            <Ranobe />
-                                        </a>
-                                        <a>
-                                            <Ranobe />
-                                        </a>
-                                        <a>
-                                            <Ranobe />
-                                        </a>
-                                        <a>
-                                            <Ranobe />
-                                        </a>
+                                    <div class="h-8 bg-white"></div>
+                                    <div class="w-full border border-transparent border-gray-500 bg-gray-300">
+                                        <h3 class="ml-4 text-black font-bold text-2x1">Отложено</h3>
                                     </div>
-                                </div>
-                            </div>
-                        <div class="h-8 bg-white"></div>
-                        <div class="w-full border border-transparent border-gray-500 bg-gray-300">
-                            <h3 class="ml-4 text-black font-bold text-2x1">Хочу читать</h3>
-                        </div>
-                        <div class="w-full">
-                            <div class="container mx-auto w-full flex flex-wrap justify-between mx-2 mt-10">
-                                <div class="border-b border-b-2 grid md:grid-cols-12 grid-cols-2 w-full font-bold">
-                                    <div class="grid col-start-1 md:col-end-10 col-end-9 grid-cols-12">
-                                        <div class="ml-4">
+                                    <div class="w-full">
+                                        <div class="mx-auto w-full flex flex-wrap justify-between mx-2 mt-10">
+                                            <div class="border-b border-b-2 grid md:grid-cols-12 grid-cols-2 w-full font-bold">
+                                                <div class="grid col-start-1 md:col-end-10 col-end-9 grid-cols-12">
+                                                    <div class="ml-1">
                                                     <span class="сursor-default font-bold text-black">
                                                     #
                                                     </span>
-                                        </div>
-                                        <div class="md:col-start-2 col-start-3 col-end-12 text-indigo-700">
+                                                    </div>
+                                                    <div class="md:col-start-2 col-start-3 col-end-12 text-indigo-700">
                                                     <span class="cursor-default font-bold text-black">
                                                         Название
                                                     </span>
-                                        </div>
-                                    </div>
-                                    <div class="col-start-10 col-end-13 md:grid grid-cols-2 hidden">
-                                        <div class="cursor-default font-bold text-black">
+                                                    </div>
+                                                </div>
+                                                <div class="col-start-10 col-end-13 md:grid grid-cols-2 hidden">
+                                                    <div class="cursor-default font-bold text-black">
                                                     <span>
                                                     Оценка
                                                     </span>
-                                        </div>
-                                        <div class="cursor-default font-bold text-black">
+                                                    </div>
+                                                    <div class="cursor-default font-bold text-black lg:ml-8 ml-4">
                                                     <span>
-                                                    Страницы
+                                                    Тип
                                                     </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="myDropdown_2">
+                                                <a>
+                                                    <Ranobe/>
+                                                </a>
+                                                <a>
+                                                    <Ranobe/>
+                                                </a>
+                                                <a>
+                                                    <Ranobe/>
+                                                </a>
+                                                <a>
+                                                    <Ranobe/>
+                                                </a>
+                                                <a>
+                                                    <Ranobe/>
+                                                </a>
+                                                <a>
+                                                    <Ranobe/>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div id="myDropdown_2">
-                                    <a>
-                                        <Ranobe />
-                                    </a>
-                                    <a>
-                                        <Ranobe />
-                                    </a>
-                                    <a>
-                                        <Ranobe />
-                                    </a>
-                                    <a>
-                                        <Ranobe />
-                                    </a>
-                                    <a>
-                                        <Ranobe />
-                                    </a>
-                                    <a>
-                                        <Ranobe />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="h-8 bg-white"></div>
-                        <div class="w-full border border-transparent border-gray-500 bg-gray-300">
-                            <h3 class="ml-4 text-black font-bold text-2x1">Прочитано</h3>
-                        </div>
-                        <div class="w-full">
-                            <div class="container mx-auto w-full flex flex-wrap justify-between mx-2 mt-10">
-                                <div class="border-b border-b-2 grid md:grid-cols-12 grid-cols-2 w-full font-bold">
-                                    <div class="grid col-start-1 md:col-end-10 col-end-9 grid-cols-12">
-                                        <div class="ml-4">
+                                    <div class="h-8 bg-white"></div>
+                                    <div class="w-full border border-transparent border-gray-500 bg-gray-300">
+                                        <h3 class="ml-4 text-black font-bold text-2x1">Прочитано</h3>
+                                    </div>
+                                    <div class="w-full">
+                                        <div class="mx-auto w-full flex flex-wrap justify-between mx-2 mt-10">
+                                            <div class="border-b border-b-2 grid md:grid-cols-12 grid-cols-2 w-full font-bold">
+                                                <div class="grid col-start-1 md:col-end-10 col-end-9 grid-cols-12">
+                                                    <div class="ml-1">
                                                     <span class="сursor-default font-bold text-black">
                                                     #
                                                     </span>
-                                        </div>
-                                        <div class="md:col-start-2 col-start-3 col-end-12 text-indigo-700">
+                                                    </div>
+                                                    <div class="md:col-start-2 col-start-3 col-end-12 text-indigo-700">
                                                     <span class="cursor-default font-bold text-black">
                                                         Название
                                                     </span>
-                                        </div>
-                                    </div>
-                                    <div class="col-start-10 col-end-13 md:grid grid-cols-2 hidden">
-                                        <div class="cursor-default font-bold text-black">
+                                                    </div>
+                                                </div>
+                                                <div class="col-start-10 col-end-13 md:grid grid-cols-2 hidden">
+                                                    <div class="cursor-default font-bold text-black">
                                                     <span>
                                                     Оценка
                                                     </span>
-                                        </div>
-                                        <div class="cursor-default font-bold text-black">
+                                                    </div>
+                                                    <div class="cursor-default font-bold text-black lg:ml-8 ml-4">
                                                     <span>
-                                                    Страницы
+                                                    Тип
                                                     </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="myDropdown_3">
+                                                <a>
+                                                    <Ranobe/>
+                                                </a>
+                                                <a>
+                                                    <Ranobe/>
+                                                </a>
+                                                <a>
+                                                    <Ranobe/>
+                                                </a>
+                                                <a>
+                                                    <Ranobe/>
+                                                </a>
+                                                <a>
+                                                    <Ranobe/>
+                                                </a>
+                                                <a>
+                                                    <Ranobe/>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div id="myDropdown_3">
-                                    <a>
-                                        <Ranobe />
-                                    </a>
-                                    <a>
-                                        <Ranobe />
-                                    </a>
-                                    <a>
-                                        <Ranobe />
-                                    </a>
-                                    <a>
-                                        <Ranobe />
-                                    </a>
-                                    <a>
-                                        <Ranobe />
-                                    </a>
-                                    <a>
-                                        <Ranobe />
-                                    </a>
-                                </div>
-                            </div>
+                                </li>
+                            </ul>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </div>
-</div>
+    </div>
+</section>
 <script>
     /*Toggle dropdown list*/
     function toggleD(myDropMen) {
@@ -301,7 +340,7 @@
                 }
             }
         }
-    }
+    };
     /*Toggle dropdown list*/
     function toggleDD(myDropMenu) {
         document.getElementById(myDropMenu).classList.toggle("invisible");
@@ -332,7 +371,7 @@
                 }
             }
         }
-    }
+    };
 
 
     function filterDD1(myDropMenu_1,myDropMenu_2,myDropMenu_3, myDropMenuSearch_1) {
@@ -704,3 +743,4 @@
     }
 </style>
 </body>
+

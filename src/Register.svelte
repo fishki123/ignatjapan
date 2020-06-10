@@ -50,11 +50,20 @@
                         <div id="myDropdown" class="dropdownlist absolute bg-gray-900 text-white right-0 mt-3 p-3 overflow-auto z-30 invisible">
                             <input type="text" class="drop-search p-2 text-gray-600" placeholder="Search.." id="myInput" onkeyup="filterDD('myDropdown','myInput')">
                             <Link to="Mainprofile">
-                                <a href="/" class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block text-center"><i class="fa fa-user fa-fw"></i>Profile</a>
+                                <a href="/"
+                                   class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block text-center"><i
+                                        class="fa fa-user fa-fw mr-2"></i>Профиль</a>
                             </Link>
-                            <a href="#" class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block text-center"><i class="fa fa-cog fa-fw"></i> Settings</a>
+                            <a href="#"
+                               class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block text-center"><i
+                                    class="fa fa-address-card fa-fw mr-2"></i>Панель админа</a>
+                            <a href="#"
+                               class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block text-center"><i
+                                    class="fa fa-bell fa-lg mr-2"></i>Уведомления</a>
                             <div class="border border-gray-800"></div>
-                            <a href="#" class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block text-center"><i class="fas fa-sign-out-alt fa-fw"></i> Log Out</a>
+                            <a href="#"
+                               class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block text-center"><i
+                                    class="fas fa-sign-out-alt fa-fw mr-2"></i>Разлогиниться</a>
                         </div>
                     </div>
                 </li>
@@ -68,21 +77,18 @@
             <li class="flex-1 md:flex-none md:mr-3">
                 <Link to="/">
                     <a href="/" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-white hover:border-pink-500">
-                        <i class="fas fa-home pr-0 ml-4 md:ml-0 md:pr-3"></i><span class="pb-1 md:pb-0 text-xs md:text-base  md:text-white block md:inline-block">Главное меню</span>
+                        <i class="fas fa-home pr-0 ml-8 md:ml-0 md:pr-3"></i><span
+                            class="pb-1 md:pb-0 text-xs md:text-base  md:text-white block md:inline-block">Главное меню</span>
                     </a>
                 </Link>
             </li>
-            <li class="flex-1 md:flex-none md:mr-3">
+            <li class="">
                 <Link to="Japanliterature">
                     <a href="/" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-white hover:border-purple-500">
-                        <i class="fa fa-book pr-0 md:pr-3 ml-6 md:ml-0"></i><span class="pb-1 md:pb-0 text-xs md:text-base  md:text-white block md:inline-block">Японская литература</span>
+                        <i class="fa fa-book pr-0 md:pr-3 ml-12 md:ml-0"></i><span
+                            class="pb-1 md:pb-0 text-xs md:text-base  md:text-white block md:inline-block">Японская литература</span>
                     </a>
                 </Link>
-            </li>
-            <li class="flex-1 md:flex-none md:mr-3">
-                <a href="#" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-white hover:border-purple-500">
-                    <i class="fas fa-chart-area pr-0 ml-4 md:pr-3"></i><span class="pb-1 md:pb-0 text-xs md:text-base text-white md:text-white block md:inline-block">Analytics</span>
-                </a>
             </li>
         </ul>
     </div>
@@ -92,22 +98,26 @@
         <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
                 <div class="flex flex-wrap -mx-3 mb-6">
                     <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                        <label class="block uppercase tracking-wide text-gray-600 text-sm font-bold mb-2"
+                               for="grid-first-name">
                             Имя
                         </label>
                         <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Имя">
                         <p class="text-red-500 text-xs italic">Пожалуйста, заполните это поле.</p>
                     </div>
                     <div class="w-full md:w-1/2 px-3">
-                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                        <label class="block uppercase tracking-wide text-gray-600 text-sm font-bold mb-2"
+                               for="grid-last-name">
                             Фамилия
                         </label>
-                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Фамилия">
+                        <input class="appearance-none block w-full bg-gray-200 text-gray-600 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                               id="grid-last-name" type="text" placeholder="Фамилия">
                     </div>
                 </div>
                 <div class="flex flex-wrap -mx-3 mb-6">
                     <div class="w-full px-3">
-                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                        <label class="block uppercase tracking-wide text-gray-600 text-sm font-bold mb-2"
+                               for="grid-last-name">
                             Логин
                         </label>
                         <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Логин">
@@ -115,7 +125,8 @@
                 </div>
                 <div class="flex flex-wrap -mx-3 mb-6">
                     <div class="w-full px-3">
-                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                        <label class="block uppercase tracking-wide text-gray-600 text-sm font-bold mb-2"
+                               for="grid-password">
                             Пароль
                         </label>
                         <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="password" placeholder="******************">
@@ -123,15 +134,33 @@
                     </div>
                 </div>
             <div class="flex flex-wrap -mx-3 mb-6">
-                <div class="w-full px-3">
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="email">Email</label>
+                <div class="w-full px-3 ">
+                    <label class="block uppercase tracking-wide text-gray-600 text-sm font-bold mb-2"
+                           for="email">Email</label>
                     <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email" placeholder="Ваш email">
                 </div>
             </div>
-            <div class="flex items-center justify-between mt-4">
+            <div>
+                <label class="inline-flex items-center cursor-pointer"
+                ><input
+                        id="customCheckLogin"
+                        type="checkbox"
+                        class="form-checkbox text-gray-800 ml-1 w-5 h-5"
+                        style="transition: all 0.15s ease 0s;"
+                /><span class="ml-2 text-gray-600 text-sm font-bold">Запомнить данные</span></label>
+            </div>
+            <div class="flex items-center justify-between mt-4 ">
                 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
                     Зарегистрироваться
                 </button>
+            </div>
+            <div class="text-center mt-3">
+                <h6 class="text-gray-600 text-sm font-bold">
+                    Есть аккаунт?
+                    <Link to="Login">
+                        <a href="/" class="underline">Войди</a>
+                    </Link>
+                </h6>
             </div>
         </form>
         <p class="text-center text-gray-500 text-xs">

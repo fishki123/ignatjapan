@@ -43,17 +43,26 @@
                 </li>
             </ul>
             <ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
-                    <li class="flex-1 md:flex-none md:mr-3 text-right">
+                <li class="flex-1 md:flex-none md:mr-3 text-right">
                     <div class="relative inline-block">
                         <button onclick="toggleDD('myDropdown')" class="drop-button text-white focus:outline-none"> <span class="pr-2"><i class="fa fa-user"></i></span> Привет, пользователь <svg class="h-3 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg></button>
                         <div id="myDropdown" class="dropdownlist absolute bg-gray-900 text-white right-0 mt-3 p-3 overflow-auto z-30 invisible">
                             <input type="text" class="drop-search p-2 text-gray-600" placeholder="Search.." id="myInput" onkeyup="filterDD('myDropdown','myInput')">
                             <Link to="Mainprofile">
-                                <a href="/" class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block text-center"><i class="fa fa-user fa-fw"></i>Profile</a>
+                                <a href="/"
+                                   class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block text-center"><i
+                                        class="fa fa-user fa-fw mr-2"></i>Профиль</a>
                             </Link>
-                            <a href="#" class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block text-center"><i class="fa fa-cog fa-fw"></i> Settings</a>
+                            <a href="#"
+                               class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block text-center"><i
+                                    class="fa fa-address-card fa-fw mr-2"></i>Панель админа</a>
+                            <a href="#"
+                               class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block text-center"><i
+                                    class="fa fa-bell fa-lg mr-2"></i>Уведомления</a>
                             <div class="border border-gray-800"></div>
-                            <a href="#" class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block text-center"><i class="fas fa-sign-out-alt fa-fw"></i> Log Out</a>
+                            <a href="#"
+                               class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block text-center"><i
+                                    class="fas fa-sign-out-alt fa-fw mr-2"></i>Разлогиниться</a>
                         </div>
                     </div>
                 </li>
@@ -67,21 +76,18 @@
             <li class="flex-1 md:flex-none md:mr-3">
                 <Link to="/">
                     <a href="/" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-white hover:border-pink-500">
-                        <i class="fas fa-home pr-0 ml-4 md:ml-0 md:pr-3 text-blue-600"></i><span class="pb-1 md:pb-0 text-xs md:text-base  md:text-white block md:inline-block">Главное меню</span>
+                        <i class="fas fa-home pr-0 ml-8 md:ml-0 md:pr-3 text-blue-600"></i><span
+                            class="pb-1 md:pb-0 text-xs md:text-base  md:text-white block md:inline-block">Главное меню</span>
                     </a>
                 </Link>
             </li>
-            <li class="flex-1 md:flex-none md:mr-3">
+            <li class="">
                 <Link to="Japanliterature">
                     <a href="/" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-white hover:border-purple-500">
-                        <i class="fa fa-book pr-0 md:pr-3 ml-6 md:ml-0"></i><span class="pb-1 md:pb-0 text-xs md:text-base  md:text-white block md:inline-block">Японская литература</span>
+                        <i class="fa fa-book pr-0 md:pr-3 ml-12 md:ml-0"></i><span
+                            class="pb-1 md:pb-0 text-xs md:text-base  md:text-white block md:inline-block">Японская литература</span>
                     </a>
                 </Link>
-            </li>
-            <li class="flex-1 md:flex-none md:mr-3">
-                <a href="#" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-white hover:border-purple-500">
-                    <i class="fas fa-chart-area pr-0 ml-4 md:pr-3"></i><span class="pb-1 md:pb-0 text-xs md:text-base text-white md:text-white block md:inline-block">Analytics</span>
-                </a>
             </li>
         </ul>
     </div>
