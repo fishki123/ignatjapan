@@ -1,1 +1,0 @@
-import{S as e,i as r,s,n as t}from"./client.9ee6942c.js";function i(e){return{c:t,l:t,m:t,p:t,i:t,o:t,d:t}}function n({params:e},{user:r}){r?this.redirect(302,`/profile/@${r.username}`):this.redirect(302,"/")}export default class extends e{constructor(e){super(),r(this,e,null,i,s,[])}}export{n as preload};
