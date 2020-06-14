@@ -1,4 +1,4 @@
 {
-  "root": "build/",
+  "root": "export/",
   "encoding": "UTF-8"
 }
